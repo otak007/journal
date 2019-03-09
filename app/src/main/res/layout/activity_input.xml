@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InputActivity">
+
+    <EditText
+        android:id="@+id/newTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/newText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Content"
+        android:inputType="textPersonName"
+        android:padding="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/moodLaughing"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:onClick="moodClicked"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/laughing" />
+
+        <ImageButton
+            android:id="@+id/moodOk"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:onClick="moodClicked"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ok" />
+
+        <ImageButton
+            android:id="@+id/moodTired"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:onClick="moodClicked"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/tired" />
+
+        <ImageButton
+            android:id="@+id/moodAngry"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:onClick="moodClicked"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/angry" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addEntry"
+        android:text="ADD" />
+</LinearLayout>
